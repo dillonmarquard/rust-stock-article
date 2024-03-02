@@ -91,7 +91,7 @@ struct NYTInterface {
 }
 
 impl NYTInterface {
-    pub fn new(APP_USER_AGENT: &str, API_KEY: &str) -> NYTInterface {
+    pub fn new(_APP_USER_AGENT: &str, API_KEY: &str) -> NYTInterface {
         let APP_USER_AGENT: &str = concat!(env!("CARGO_PKG_NAME"),"/",env!("CARGO_PKG_VERSION"));
         
         let api_key = API_KEY;
